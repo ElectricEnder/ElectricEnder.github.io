@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<title> The Mighty Gorons </title>
+		<script> 
+			function banner(){
+				var text = confirm("Good job, goro! You found the secret! Have a cookie 🍪");
+				return text;
+			}
+			function answer(){
+				var radio = document.getElementsByName("trivia");
+				var selection = false;
+				var message = "";
+				for( var i = 0; i < radio.length; i++) {
+					if(radio[i].value == "yes" && radio[i].checked == true){
+						selection = true;
+					}
+				}
+
+				if(selection == true) {
+
+					message = message + "<b><p style='color:#33f039'>Way to go!</p></b>";
+
+				} else {
+
+						message = message + "<b><p style='color:#8f0578'>Try again my friend.</p></b>";
+
+					}
+
+				document.getElementById("response").innerHTML = message;
+
+
+			}
+		</script>
+		<link type="text/css" rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<center>
+			<a onclick="return banner()"href="">
+				<header id="banner"> 
+					<i> 
+						<h1 id="title"> The Inhabitants of Death Mountain 
+					</i>
+					<img width="16%" src="https://tse3.mm.bing.net/th/id/OIP.	xUPTIVC8RsJ9eHS3I6mQ5QHaEK?pid=Api&rs=1" />
+					</h1>
+				</header>
+			</a>
+
+			<nav>
+				<ul id="navmenu">
+					<li class="navitem"> <a href="goron.html"> Home </a> </li>
+					<li class="navitem"> <a href="about.html"> About </a> </li>
+					<li class="navitem"> <a href="contact.html"> Contact </a> </li>
+					<li class="navitem"> <a href="#"> Refresh </a> </li>
+				</ul>
+			</nav>
+
+			<p class="color1"> This is a website filled with information about the <strong> best </strong> species in <i> all of Hyrule </i> and their <u><i> Champion   </i> </u>
+			</p>
+		</center>
+
+		<div class="rightside">
+			<div class="nerdburrito">
+				<h2> Goron <span class="gtrivia">Trivia</span>: </h2> 
+
+				<p class="paragraph"> What is the most famous Goron delicacy?? </p>
+
+				<form>
+					<div id="response">
+
+					</div>
+
+					<input type="radio" name="trivia" value="no"> Hytale Lizards <br>
+
+					<input type="radio" name="trivia" value="yes"> Rock 	Roast <br>
+
+					<input type="radio" name="trivia" value="no"> Hearty Truffles <br>
+
+					<input type="radio" name="trivia" value="no"> Steamed  Vegetables <br>
+
+					<input onclick="answer()" type="button" value="Submit Answer" id="button">
+				</form>
+			</div>
+		</div>
+
+		<div class="leftside">
+			<h3> Here is a list of what will be discussed. </h3>
+			<div class="burrito">
+				<ol>
+
+					<li class="listitem"> Their ability to withstand great heat. 	</li>
+
+					<li class="listitem"> Their biology </li>
+
+					<li class="listitem"> Their mode of transportation </li>
+
+					<li class="listitem"> Their prefered living conditions </li>
+
+					<li class="listitem"> Their Champion </li>
+
+				</ol>
+
+				<!-- Add this later.
+				<img id="daruk" src="https://pa1.narvii.com/6758/5e0d759e790be78fada6ed45267e9a6b26213c26_00.gif"/>
+				-->
+
+			</div>
+		</div>
+
+		<div class="clearfloat"> </div>
+
+		<iframe width="270" height="150" src="https://www.youtube.com/embed/55kmWp2ywKk" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Oh no! Your browser doesn't support this video.</iframe>
+
+		<hr/>
+
+		<img class="picborder" width="40%" src="https://tse3.mm.bing.net/th/id/OIP.GjrEomnL33DmdHzjNIdWbgAAAA?pid=Api&rs=1"/>
+		<img width="50%" src="https://tse4.mm.bing.net/th/id/OIP.dokdeagKdp9Uj9M0Vl15sgHaF7?pid=Api&rs=1"/>
+		<hr/>
+
+		<center style="font-size:16px">
+    		<footer id="footer" style="color:#2c93ed"> Author and editor: 
+    			<i> 
+    				Jayden Galusha 
+    			</i>
+			<br/>
+			<br/>
+    			<strong>
+    				<a href="https://zelda.fandom.com" target="_blank">Learn about Gorons for yourself!</a>
+    			</strong> 
+    		</footer>
+		</center>
+		<audio autoplay loop>
+			<source src="https://onlinevideoconverter.pro/api/storage/e6069effc81956b527efe48d1c9c30688b5b0af5?fileName=Death%20Mountain%20(The%20Legend%20of%20Zelda-%20Breath%20of%20the%20Wild%20OST).mp3">
+		</audio>
+	</body>
+</html>
